@@ -3,9 +3,6 @@ from flask import Flask
 from flask import render_template, request
 from jinja2 import Environment, FileSystemLoader
 
-#TODO:
-#   - Secure user token for pushing to GitHub
-
 # BEGIN DISCOGS METHODS (borrowed from HW5 mostly)
 import discogs as discogs
 user_token = discogs.token
@@ -41,12 +38,8 @@ def price_info(release_id):
         return price_data
     except urllib.error.HTTPError as e:
         raise urllib.error.HTTPError
-        #print("The designated server could not fulfill the request.")
-        #print("Error code: ", e.code)
     except urllib.error.URLError as e:
         raise urllib.error.URLError
-        #print("We could not reach a server successfully.")
-        #print("Reason: ", e.reason)
 
 # BEGIN FLASK METHODS
 app = Flask(__name__)
