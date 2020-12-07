@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="/static/css/style.css" rel="stylesheet">
+        <title>SD - Results</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <a href="/">Back to Home</a>
+            <img src="{{image_url}}"/>
+            <div class="info">
+                <div clas="top">
+                    <div class="title">{{title}}</div>
+                </div>
+                <div class="below">
+                    <div class="text">Year: {{year}}</div>
+                    <div class="text">Country: {{country}}</div>
+                    <div class="text">Label: {{label}}</div>
+                    <div class="text">{{sale_count}} at ${{price}} {{currency}} (lowest)</div>
+                    <a href="https://discogs.com/{{main_url}}" target="_blank" rel="noopener noreferrer">More Info</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

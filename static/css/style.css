@@ -1,0 +1,45 @@
+body {
+    background: #700f08;
+    color: #ede39c;
+    width: 100%;
+    height: 100%;
+}
+
+.index-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 25pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a, .text {
+    font-size: 20pt;
+}
+
+a {
+    color: #9cedea;
+}
