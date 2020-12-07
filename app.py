@@ -7,7 +7,8 @@ from jinja2 import Environment, FileSystemLoader
 #   - Secure user token for pushing to GitHub
 
 # BEGIN DISCOGS METHODS (borrowed from HW5 mostly)
-user_token = "cMmRThDsRaQqngjuLzqbbWavtgoYjwicPdQoWUXX"
+import discogs as discogs
+user_token = discogs.token
 
 def album_info(search_term):
     base_url = "https://api.discogs.com/database/search?"
