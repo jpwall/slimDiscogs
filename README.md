@@ -6,8 +6,10 @@ Simply go to [sd.jessewalling.com](https://sd.jessewalling.com) and search for p
 
 ## Searching in SD
 It is possible to search generally and more specifically in SD.
-If you search for the general name of an album, it is likely you will get the original release
-If you search by barcode, you will get that specific release information
+
+If you search for the general name of an album, it is likely you will get the original release.
+
+If you search by barcode, you will get that specific release information.
 
 ### Examples
 (Original version search term in brackets)
