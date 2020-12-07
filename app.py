@@ -62,7 +62,10 @@ def main():
         if form['search'].strip() != '':
             try:
                 data = album_info(form['search'])
-                return render_template('results.html', title=data["results"][0]["title"], year=data["results"][0]["year"],
+                yr = 'n/a'
+                if "year" in data["results"][0].keys():
+                    yr = data["results"][0]["year"]
+                return render_template('results.html', title=data["results"][0]["title"], year=yr,
                     country=data["results"][0]["country"], sale_count=data["price_data"]["num_for_sale"],
                     price=data["price_data"]["lowest_price"]["value"], currency=data["price_data"]["lowest_price"]["currency"],
                     main_url=data["results"][0]["uri"], label=data["results"][0]["label"][0],
